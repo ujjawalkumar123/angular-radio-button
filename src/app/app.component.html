@@ -1,0 +1,6 @@
+<input [(ngModel)]="inputText"  type="text">
+	<p [style.color]="changecolor">{{inputText2}}</p>
+	<!-- <input type="radio" name="rad" value="red"  (ngModel)="rad">Yes -->
+	<input type="radio"name="rad" [value]="1" (change)="onSelectionChange(1)">Yes
+	<input type="radio"name="rad" [value]="2" (change)="onSelectionChange(2)">No
+	<button (click)=changeCOLOR()>Submit</button>
